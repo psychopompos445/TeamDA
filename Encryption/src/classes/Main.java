@@ -3,7 +3,7 @@ package classes;
 public class Main {
 
 	public static void main(String[] args) {
-		Encryption text = new Encryption("KRIS E HOMOSEKS");
+		Encryption text = new Encryption("UTLXPG");
 		String text1 = text.encrypt();
 		System.out.println(text1);
 		text1 = text.decrypt(text1);
