@@ -1,11 +1,14 @@
 
 public class ChessBoard {
-	int totalRows;
-	int totalCols;
-	int row;
-	int col;
-	char[][] board;
+	private int totalRows;
+	private int totalCols;
+	private char[][] board;
 	
+	ChessBoard(int rowCount, int colCount) {
+		totalRows = rowCount;
+		totalCols = colCount;
+		board = new char[rowCount][colCount];
+	}
 
 	void knightMove(int row, int col) {
 		board[row][col] = 'k';
