@@ -8,10 +8,7 @@ public class MoveTheKnight {
 		System.out.print("Please enter the board's dimensions: ");
 		int m = sc.nextInt();
 		int n = sc.nextInt();
-		ChessBoard cb1 = new ChessBoard();
-		cb1.totalRows = m;
-		cb1.totalCols = n;
-		cb1.board = new char[m][n];
+		ChessBoard cb1 = new ChessBoard(m, n);
 		System.out.print("Please place the knight: ");
 		cb1.row = sc.nextInt();
 		cb1.col = sc.nextInt();
